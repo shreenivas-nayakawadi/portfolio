@@ -2,6 +2,8 @@
 
 A modern, responsive portfolio website built with HTML, CSS, and JavaScript. This website showcases professional work, skills, and personal information in an elegant and user-friendly interface.
 
+[Live demo]("https://portfolio-eta-nine-45.vercel.app/")
+
 ## 🚀 Features
 
 - Responsive design that works on all devices
