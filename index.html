@@ -1,245 +1,473 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Shreenivas Nayakawadi</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Shreenivas Nayakawadi</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img
-          src="./assets/profile-pic.png"
-          alt="Shreenivas Nayakawadi profile picture"
-          class="profile-pic"
-        />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Shreenivas Nayakawadi</h1>
-        <p class="section__text__p2">Full Stack Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
-          >
-            Download Resume
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://linkedin.com/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/profile-pic-1.jpg"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>Fresher<br />Full Stack Development</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>Engineering in Infromation Science and Engineering<br />Dayananda Sagar College of Engineering</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-                I am a student at Dayananda Sagar College of Engineering, currently in my 3rd year pursuing a degree in Information Science and Engineering. I have a strong passion for technology and software development, with a keen interest in full-stack development.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="projects">
+      <head>
+            <meta charset="UTF-8" />
+            <meta
+                  name="viewport"
+                  content="width=device-width, initial-scale=1.0"
+            />
+            <title>Shreenivas Nayakawadi | Portfolio</title>
+            <link
+                  rel="stylesheet"
+                  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            />
+            <link rel="stylesheet" href="styles.css" />
+            <link rel="icon" type="image/png" href="images/favicon.png" />
+      </head>
+      <body>
+            <!-- Navigation -->
+            <nav id="navbar">
+                  <div class="container">
+                        <a href="#" class="logo">Portfolio</a>
+                        <ul class="nav-links">
+                              <li><a href="#about">About</a></li>
+                              <li><a href="#projects">Projects</a></li>
+                              <li><a href="#bout">Skills</a></li>
+                              <li><a href="#contact">Contact</a></li>
+                        </ul>
+                        <button
+                              id="themeToggle"
+                              class="theme-toggle"
+                              aria-label="Toggle dark mode"
+                        >
+                              <i class="fas fa-moon"></i>
+                        </button>
+                        <button class="hamburger" id="hamburger">
+                              <i class="fas fa-bars"></i>
+                        </button>
+                  </div>
+            </nav>
 
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Budget Management System</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/shreenivas-nayakawadi/3rd-yr-miniProject'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/shreenivas-nayakawadi/3rd-yr-miniProject/tree/main/images'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Cruise Ship Management</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/shreenivas-nayakawadi/cruise-ship-Management'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/shreenivas-nayakawadi/cruise-ship-management/tree/main/screenshots'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Super Mall</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/shreenivas-nayakawadi/super-mall'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/shreenivas-nayakawadi/super-mall/tree/main/screenshots'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:1ds22is143@dsce.edu.in">1ds22is143@dsce.edu.in</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2023 Shreenivas Nayakawadi. All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+            <!-- Hero Section -->
+            <section id="hero">
+                  <div class="container">
+                        <div class="hero-content">
+                              <div class="hero-image">
+                                    <img
+                                          src="images/PHOTO.jpg"
+                                          alt="Shreenivas Nayakawadi"
+                                    />
+                              </div>
+                              <div class="hero-text">
+                                    <h1>Shreenivas Nayakawadi</h1>
+                                    <h2>Full-Stack Developer</h2>
+                                    <p>
+                                          Building responsive, scalable web
+                                          applications with modern technologies
+                                    </p>
+                                    <div class="hero-buttons">
+                                          <a
+                                                href="#projects"
+                                                class="btn btn-primary"
+                                                >View My Work</a
+                                          >
+                                          <a
+                                                href="#contact"
+                                                class="btn btn-secondary"
+                                                >Contact Me</a
+                                          >
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about">
+                  <div class="container">
+                        <h2 class="section-title">About Me</h2>
+                        <div class="about-content">
+                              <div class="about-text">
+                                    <p>
+                                          I'm an enthusiastic and
+                                          detail-oriented Information Science
+                                          and Engineering student with hands-on
+                                          experience in full-stack web
+                                          development through internships and
+                                          academic projects.
+                                    </p>
+                                    <p>
+                                          Proficient in React, Next.js, Node.js,
+                                          and Firebase, I have a strong
+                                          foundation in building responsive and
+                                          scalable applications. I'm eager to
+                                          leverage my technical skills,
+                                          problem-solving abilities, and passion
+                                          for learning to contribute to
+                                          innovative projects.
+                                    </p>
+                                    <div class="education">
+                                          <h3>Education</h3>
+                                          <div class="education-item">
+                                                <h4>
+                                                      Dayananda Sagar College of
+                                                      Engineering
+                                                </h4>
+                                                <p>
+                                                      Bachelor of Engineering in
+                                                      Information Science and
+                                                      Engineering
+                                                </p>
+                                                <p class="date">
+                                                      2022 - 2026 | CGPA: 9.14
+                                                </p>
+                                          </div>
+                                          <div class="education-item">
+                                                <h4>St. Joseph's PU College</h4>
+                                                <p>Science (PCMCs)</p>
+                                                <p class="date">
+                                                      2019 - 2021 | Percentage:
+                                                      99.66%
+                                                </p>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="about-skills">
+                                    <h3>Technical Skills</h3>
+                                    <div class="skills-grid">
+                                          <div class="skill-category">
+                                                <h4>Frontend</h4>
+                                                <ul>
+                                                      <li>React.js</li>
+                                                      <li>Next.js</li>
+                                                      <li>JavaScript</li>
+                                                      <li>TypeScript</li>
+                                                      <li>HTML/CSS</li>
+                                                      <li>Tailwind CSS</li>
+                                                </ul>
+                                          </div>
+                                          <div class="skill-category">
+                                                <h4>Backend</h4>
+                                                <ul>
+                                                      <li>Node.js</li>
+                                                      <li>Express.js</li>
+                                                      <li>MongoDB</li>
+                                                      <li>Firebase</li>
+                                                      <li>REST APIs</li>
+                                                      <li>Prisma</li>
+                                                </ul>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects">
+                  <div class="container">
+                        <h2 class="section-title">Featured Projects</h2>
+                        <div class="projects-grid">
+                              <!-- Project 1 -->
+                              <div class="project-card">
+                                    <div class="project-image">
+                                          <img
+                                                src="images/calender.jpg"
+                                                alt="Academic Calendar Generator"
+                                          />
+                                          <div class="project-links">
+                                                <a
+                                                      href="https://github.com/shreenivas-nayakawadi/Calender_of_events_generator"
+                                                      target="_blank"
+                                                      aria-label="GitHub"
+                                                      ><i
+                                                            class="fab fa-github"
+                                                      ></i
+                                                ></a>
+                                                <a
+                                                      href="https://shreenivas-nayakawadi.github.io/Calender_of_events_generator"
+                                                      target="_blank"
+                                                      aria-label="Live Demo"
+                                                      ><i
+                                                            class="fas fa-external-link-alt"
+                                                      ></i
+                                                ></a>
+                                          </div>
+                                    </div>
+                                    <div class="project-info">
+                                          <h3>Academic Calendar Generator</h3>
+                                          <div class="project-tech">
+                                                <span>React</span>
+                                                <span>HTML</span>
+                                                <span>CSS</span>
+                                                <span>JavaScript</span>
+                                          </div>
+                                          <p>
+                                                Web-based app to generate
+                                                academic calendars with holiday
+                                                and event management, featuring
+                                                export as JPEG and automatic
+                                                conflict detection.
+                                          </p>
+                                    </div>
+                              </div>
+
+                              <!-- Project 2 -->
+                              <div class="project-card">
+                                    <div class="project-image">
+                                          <img
+                                                src="images/cruise.png"
+                                                alt="Cruise Ship Management System"
+                                          />
+                                          <div class="project-links">
+                                                <a
+                                                      href="https://github.com/shreenivas-nayakawadi/cruise-ship-management"
+                                                      target="_blank"
+                                                      aria-label="GitHub"
+                                                      ><i
+                                                            class="fab fa-github"
+                                                      ></i
+                                                ></a>
+                                                <a
+                                                      href="https://cruise-ship-management-ca45e.web.app"
+                                                      target="_blank"
+                                                      aria-label="Live Demo"
+                                                      ><i
+                                                            class="fas fa-external-link-alt"
+                                                      ></i
+                                                ></a>
+                                          </div>
+                                    </div>
+                                    <div class="project-info">
+                                          <h3>Cruise Ship Management System</h3>
+                                          <div class="project-tech">
+                                                <span>React</span>
+                                                <span>Tailwind CSS</span>
+                                                <span>Firebase</span>
+                                          </div>
+                                          <p>
+                                                Multi-role support system with
+                                                service booking, movie
+                                                scheduling, food ordering, and
+                                                inventory tracking using
+                                                Firebase for real-time updates.
+                                          </p>
+                                    </div>
+                              </div>
+
+                              <!-- Project 3 -->
+                              <div class="project-card">
+                                    <div class="project-image">
+                                          <img
+                                                src="images/budget.png"
+                                                alt="Budget Management System"
+                                          />
+                                          <div class="project-links">
+                                                <a
+                                                      href="https://github.com/shreenivas-nayakawadi/budget_management"
+                                                      target="_blank"
+                                                      aria-label="GitHub"
+                                                      ><i
+                                                            class="fab fa-github"
+                                                      ></i
+                                                ></a>
+                                                <a
+                                                      href="https://budget-management-awin.vercel.app"
+                                                      target="_blank"
+                                                      aria-label="Live Demo"
+                                                      ><i
+                                                            class="fas fa-external-link-alt"
+                                                      ></i
+                                                ></a>
+                                          </div>
+                                    </div>
+                                    <div class="project-info">
+                                          <h3>Budget Management System</h3>
+                                          <div class="project-tech">
+                                                <span>React</span>
+                                                <span>Node.js</span>
+                                                <span>MongoDB</span>
+                                                <span>Google Gemini AI</span>
+                                          </div>
+                                          <p>
+                                                AI-powered receipt scanning and
+                                                spending insights with user
+                                                authentication, expense
+                                                tracking, and category-wise
+                                                budgeting.
+                                          </p>
+                                    </div>
+                              </div>
+
+                              <!-- Project 4 -->
+                              <div class="project-card">
+                                    <div class="project-image">
+                                          <img
+                                                src="images/ai-saas.png"
+                                                alt="AI SaaS Platform"
+                                          />
+                                          <div class="project-links">
+                                                <a
+                                                      href="https://github.com/shreenivas-nayakawadi/saas-ai"
+                                                      target="_blank"
+                                                      aria-label="GitHub"
+                                                      ><i
+                                                            class="fab fa-github"
+                                                      ></i
+                                                ></a>
+                                                <a
+                                                      href="https://saas-ai-eta-teal.vercel.app"
+                                                      target="_blank"
+                                                      aria-label="Live Demo"
+                                                      ><i
+                                                            class="fas fa-external-link-alt"
+                                                      ></i
+                                                ></a>
+                                          </div>
+                                    </div>
+                                    <div class="project-info">
+                                          <h3>AI SaaS Platform</h3>
+                                          <div class="project-tech">
+                                                <span>Next.js</span>
+                                                <span>Tailwind CSS</span>
+                                                <span>MongoDB</span>
+                                                <span>Prisma</span>
+                                          </div>
+                                          <p>
+                                                SaaS platform with tools like
+                                                code generation and chat
+                                                interfaces, featuring secure
+                                                auth with Clerk and intelligent
+                                                services via Google AI APIs.
+                                          </p>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience">
+                  <div class="container">
+                        <h2 class="section-title">Experience</h2>
+                        <div class="experience-item">
+                              <div class="experience-header">
+                                    <h3>Full-Stack Web Development Intern</h3>
+                                    <span class="date"
+                                          >March 2025 - May 2025</span
+                                    >
+                              </div>
+                              <div class="experience-company">
+                                    <p>
+                                          Unified Mentor Pvt Ltd (Internship ID:
+                                          UMIP281034)
+                                    </p>
+                                    <span class="location">Remote</span>
+                              </div>
+                              <ul class="experience-details">
+                                    <li>
+                                          Completed a 2-month internship
+                                          focusing on full-stack web development
+                                    </li>
+                                    <li>
+                                          Gained hands-on experience working on
+                                          real-time applications
+                                    </li>
+                                    <li>
+                                          Demonstrated consistency and hard work
+                                          throughout the program
+                                    </li>
+                              </ul>
+                        </div>
+                  </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact">
+                  <div class="container">
+                        <h2 class="section-title">Get In Touch</h2>
+                        <div class="contact-content">
+                              <div class="contact-info">
+                                    <h3>Contact Information</h3>
+                                    <ul>
+                                          <li>
+                                                <i
+                                                      class="fas fa-map-marker-alt"
+                                                ></i>
+                                                <span>Bengaluru, India</span>
+                                          </li>
+                                          <li>
+                                                <i class="fas fa-phone"></i>
+                                                <a href="tel:+916363060232"
+                                                      >+91-6363060232</a
+                                                >
+                                          </li>
+                                          <li>
+                                                <i class="fas fa-envelope"></i>
+                                                <a
+                                                      href="mailto:shreenivasnayakawadi5@gmail.com"
+                                                      >shreenivasnayakawadi5@gmail.com</a
+                                                >
+                                          </li>
+                                    </ul>
+                                    <div class="social-links">
+                                          <a
+                                                href="https://linkedin.com/in/shreenivas-nayakawadi-214184369"
+                                                target="_blank"
+                                                aria-label="LinkedIn"
+                                                ><i class="fab fa-linkedin"></i
+                                          ></a>
+                                          <a
+                                                href="https://github.com/shreenivas-nayakawadi"
+                                                target="_blank"
+                                                aria-label="GitHub"
+                                                ><i class="fab fa-github"></i
+                                          ></a>
+                                    </div>
+                              </div>
+                              <form class="contact-form" id="contactForm">
+                                    <div class="form-group">
+                                          <input
+                                                type="text"
+                                                id="name"
+                                                placeholder="Your Name"
+                                                required
+                                          />
+                                    </div>
+                                    <div class="form-group">
+                                          <input
+                                                type="email"
+                                                id="email"
+                                                placeholder="Your Email"
+                                                required
+                                          />
+                                    </div>
+                                    <div class="form-group">
+                                          <input
+                                                type="text"
+                                                id="subject"
+                                                placeholder="Subject"
+                                          />
+                                    </div>
+                                    <div class="form-group">
+                                          <textarea
+                                                id="message"
+                                                rows="5"
+                                                placeholder="Your Message"
+                                                required
+                                          ></textarea>
+                                    </div>
+                                    <button
+                                          type="submit"
+                                          class="btn btn-primary"
+                                    >
+                                          Send Message
+                                    </button>
+                              </form>
+                        </div>
+                  </div>
+            </section>
+
+            <!-- Footer -->
+            <footer>
+                  <div class="container">
+                        <p>
+                              &copy; <span id="year"></span> Shreenivas
+                              Nayakawadi. All rights reserved.
+                        </p>
+                  </div>
+            </footer>
+
+            <script src="script.js"></script>
+      </body>
 </html>
