@@ -1,722 +1,978 @@
 <!DOCTYPE html>
 <html lang="en">
-      <head>
-            <meta charset="UTF-8" />
-            <meta
-                  name="viewport"
-                  content="width=device-width, initial-scale=1.0"
-            />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Shreenivas Nayakawadi - Full-Stack Developer specializing in React, Next.js, Node.js, and modern web technologies. View my portfolio and projects." />
+    <meta name="keywords" content="Full-Stack Developer, React Developer, Next.js, Node.js, Web Developer, Frontend Developer, Backend Developer" />
+    <meta name="author" content="Shreenivas Nayakawadi" />
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Shreenivas Nayakawadi | Full-Stack Developer" />
+    <meta property="og:description" content="Building responsive, scalable web applications with modern technologies" />
+    <meta property="og:type" content="website" />
+    
+    <title>Shreenivas Nayakawadi | Full-Stack Developer</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="icon" type="image/png" href="images/portfolio.ico" />
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- Cursor Effect -->
+    <div class="cursor-glow"></div>
+    
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">SN</div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
 
-            <title>Shreenivas Nayakawadi | Portfolio</title>
-            <link
-                  rel="stylesheet"
-                  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-            />
-            <link rel="stylesheet" href="styles.css" />
-            <link rel="icon" type="image/png" href="images/portfolio.ico" />
-      </head>
-      <body>
-            <!-- Navigation -->
-            <nav id="navbar">
-                  <div class="container">
-                        <a href="#" class="logo">Portfolio</a>
-                        <ul class="nav-links">
-                              <li><a href="#about">About</a></li>
-                              <li><a href="#projects">Projects</a></li>
-                              <li><a href="#about">Skills</a></li>
-                              <li><a href="#contact">Contact</a></li>
-                        </ul>
-                        <button
-                              id="themeToggle"
-                              class="theme-toggle"
-                              aria-label="Toggle dark mode"
-                        >
-                              <i class="fas fa-moon"></i>
-                        </button>
-                        <button class="hamburger" id="hamburger">
-                              <i class="fas fa-bars"></i>
-                        </button>
-                  </div>
-            </nav>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">SN</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about" data-text="About">About</a></li>
+                <li><a href="#experience" data-text="Experience">Experience</a></li>
+                <li><a href="#skills" data-text="Skills">Skills</a></li>
+                <li><a href="#projects" data-text="Projects">Projects</a></li>
+                <li><a href="#contact" data-text="Contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="Shreenivas_nayakawadi_ds22is143.pdf" download class="btn btn-nav">
+                    <i class="fas fa-download"></i>
+                    <span>Resume</span>
+                </a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
 
-            <!-- Hero Section -->
-            <section id="hero">
-                  <div class="container">
-                        <div class="hero-content">
-                              <div class="hero-image">
-                                    <img
-                                          src="images/PHOTO.jpg"
-                                          alt="Shreenivas Nayakawadi"
-                                    />
-                              </div>
-                              <div class="hero-text">
-                                    <h1>Shreenivas Nayakawadi</h1>
-                                    <h2>Full-Stack Developer</h2>
-                                    <p>
-                                          Building responsive, scalable web
-                                          applications with modern technologies
-                                    </p>
-                                    <div class="hero-buttons">
-                                          <a
-                                                href="#projects"
-                                                class="btn btn-primary"
-                                                >View My Work</a
-                                          >
-                                          <a
-                                                href="#contact"
-                                                class="btn btn-secondary"
-                                                >Contact Me</a
-                                          >
-                                    </div>
-                              </div>
-                        </div>
-                  </div>
-            </section>
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-grid"></div>
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    <span>Available for opportunities</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="greeting">Hello, I'm</span>
+                    <span class="name">Shreenivas Nayakawadi</span>
+                </h1>
+                <div class="hero-subtitle">
+                    <span class="static-text">I build </span>
+                    <span class="typing-wrapper">
+                        <span class="typed-text" id="typed-text"></span>
+                        <span class="cursor">|</span>
+                    </span>
+                </div>
+                <p class="hero-description">
+                    Full-Stack Developer crafting exceptional digital experiences with 
+                    <strong>React</strong>, <strong>Next.js</strong>, <strong>Node.js</strong>, 
+                    and modern web technologies. Passionate about building scalable, 
+                    user-centric applications that make a difference.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-count="10">0</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="9.02">0</span>
+                        <span class="stat-label">CGPA</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="25">0</span>
+                        <span class="stat-label">Technologies</span>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Let's Talk</span>
+                        <i class="fas fa-comments"></i>
+                    </a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/shreenivas-nayakawadi" target="_blank" rel="noopener" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/shreenivas-nayakawadi-214184369" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:shreenivasnayakawadi5@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-bg"></div>
+                    <img src="images/PHOTO.jpeg" alt="Shreenivas Nayakawadi" class="hero-image" />
+                    <div class="hero-image-border"></div>
+                </div>
+                <div class="floating-tech">
+                    <div class="tech-icon" style="--delay: 0s; --x: -80px; --y: -60px;">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <div class="tech-icon" style="--delay: 0.5s; --x: 80px; --y: -40px;">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <div class="tech-icon" style="--delay: 1s; --x: -90px; --y: 60px;">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <div class="tech-icon" style="--delay: 1.5s; --x: 90px; --y: 80px;">
+                        <i class="fas fa-database"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
 
-            
-            <!-- About Section -->
-            <section id="about">
-                  <div class="container">
-                        <h2 class="section-title">About Me</h2>
-                        <div class="about-content">
-                              <div class="about-text">
-                                    <p>
-                                          I'm an enthusiastic and
-                                          detail-oriented Information Science
-                                          and Engineering student with hands-on
-                                          experience in full-stack web
-                                          development through internships and
-                                          academic projects.
-                                    </p>
-                                    <p>
-                                          Proficient in React, Next.js, Node.js,
-                                          and Firebase, I have a strong
-                                          foundation in building responsive and
-                                          scalable applications. I'm eager to
-                                          leverage my technical skills,
-                                          problem-solving abilities, and passion
-                                          for learning to contribute to
-                                          innovative projects.
-                                    </p>
-                                    <div class="education">
-                                          <h3>Education</h3>
-                                          <div class="education-item">
-                                                <h4>
-                                                      Dayananda Sagar College of
-                                                      Engineering
-                                                </h4>
-                                                <p>
-                                                      Bachelor of Engineering in
-                                                      Information Science and
-                                                      Engineering
-                                                </p>
-                                                <p class="date">
-                                                      2022 - 2026 | CGPA: 9.14
-                                                </p>
-                                          </div>
-                                          <div class="education-item">
-                                                <h4>St. Joseph's PU College</h4>
-                                                <p>Science (PCMCs)</p>
-                                                <p class="date">
-                                                      2019 - 2021 | Percentage:
-                                                      99.66%
-                                                </p>
-                                          </div>
-                                    </div>
-                              </div>
-                              <div class="about-skills" id="skills">
-                                    <h3>Technical Skills</h3>
-                                    <div class="skills-grid">
-                                          <div class="skill-category">
-                                                <h4>Frontend</h4>
-                                                <ul>
-                                                      <li>React.js</li>
-                                                      <li>Next.js</li>
-                                                      <li>JavaScript</li>
-                                                      <li>TypeScript</li>
-                                                      <li>HTML/CSS</li>
-                                                      <li>Tailwind CSS</li>
-                                                </ul>
-                                          </div>
-                                          <div class="skill-category">
-                                                <h4>Backend</h4>
-                                                <ul>
-                                                      <li>Node.js</li>
-                                                      <li>Express.js</li>
-                                                      <li>MongoDB</li>
-                                                      <li>Firebase</li>
-                                                      <li>REST APIs</li>
-                                                      <li>Prisma</li>
-                                                </ul>
-                                          </div>
-                                    </div>
-                              </div>
-                        </div>
-                  </div>
-            </section>
-
-            <!-- Projects Section -->
-            <section id="projects">
-                  <div class="container">
-                        <h2 class="section-title">Featured Projects</h2>
-                        <div class="projects-grid">
-                              <!-- Project 1 -->
-                              <div class="project-card">
-                                    <div class="project-image">
-                                          <img
-                                                src="images/calender.jpg"
-                                                alt="Academic Calendar Generator"
-                                          />
-                                          <div class="project-links">
-                                                <a
-                                                      href="https://github.com/shreenivas-nayakawadi/Calender_of_events_generator"
-                                                      target="_blank"
-                                                      aria-label="GitHub"
-                                                      ><i
-                                                            class="fab fa-github"
-                                                      ></i
-                                                ></a>
-                                                <a
-                                                      href="https://shreenivas-nayakawadi.github.io/Calender_of_events_generator"
-                                                      target="_blank"
-                                                      aria-label="Live Demo"
-                                                      ><i
-                                                            class="fas fa-external-link-alt"
-                                                      ></i
-                                                ></a>
-                                          </div>
-                                    </div>
-                                    <div class="project-info">
-                                          <h3>Academic Calendar Generator</h3>
-                                          <div class="project-tech">
-                                                <span>React</span>
-                                                <span>HTML</span>
-                                                <span>CSS</span>
-                                                <span>JavaScript</span>
-                                          </div>
-                                          <p>
-                                                Web-based app to generate
-                                                academic calendars with holiday
-                                                and event management, featuring
-                                                export as JPEG and automatic
-                                                conflict detection.
-                                          </p>
-                                    </div>
-                              </div>
-
-                              <!-- Project 2 -->
-                              <div class="project-card">
-                                    <div class="project-image">
-                                          <img
-                                                src="images/cruise.png"
-                                                alt="Cruise Ship Management System"
-                                          />
-                                          <div class="project-links">
-                                                <a
-                                                      href="https://github.com/shreenivas-nayakawadi/cruise-ship-management"
-                                                      target="_blank"
-                                                      aria-label="GitHub"
-                                                      ><i
-                                                            class="fab fa-github"
-                                                      ></i
-                                                ></a>
-                                                <a
-                                                      href="https://cruise-ship-management-ca45e.web.app"
-                                                      target="_blank"
-                                                      aria-label="Live Demo"
-                                                      ><i
-                                                            class="fas fa-external-link-alt"
-                                                      ></i
-                                                ></a>
-                                          </div>
-                                    </div>
-                                    <div class="project-info">
-                                          <h3>Cruise Ship Management System</h3>
-                                          <div class="project-tech">
-                                                <span>React</span>
-                                                <span>Tailwind CSS</span>
-                                                <span>Firebase</span>
-                                          </div>
-                                          <p>
-                                                Multi-role support system with
-                                                service booking, movie
-                                                scheduling, food ordering, and
-                                                inventory tracking using
-                                                Firebase for real-time updates.
-                                          </p>
-                                    </div>
-                              </div>
-
-                              <!-- Project 3 -->
-                              <div class="project-card">
-                                    <div class="project-image">
-                                          <img
-                                                src="images/budget.png"
-                                                alt="Budget Management System"
-                                          />
-                                          <div class="project-links">
-                                                <a
-                                                      href="https://github.com/shreenivas-nayakawadi/budget_management"
-                                                      target="_blank"
-                                                      aria-label="GitHub"
-                                                      ><i
-                                                            class="fab fa-github"
-                                                      ></i
-                                                ></a>
-                                                <a
-                                                      href="https://budget-management-awin.vercel.app"
-                                                      target="_blank"
-                                                      aria-label="Live Demo"
-                                                      ><i
-                                                            class="fas fa-external-link-alt"
-                                                      ></i
-                                                ></a>
-                                          </div>
-                                    </div>
-                                    <div class="project-info">
-                                          <h3>Budget Management System</h3>
-                                          <div class="project-tech">
-                                                <span>React</span>
-                                                <span>Node.js</span>
-                                                <span>MongoDB</span>
-                                                <span>Google Gemini AI</span>
-                                          </div>
-                                          <p>
-                                                AI-powered receipt scanning and
-                                                spending insights with user
-                                                authentication, expense
-                                                tracking, and category-wise
-                                                budgeting.
-                                          </p>
-                                    </div>
-                              </div>
-
-                              <!-- Project 4 -->
-                              <div class="project-card">
-                                    <div class="project-image">
-                                          <img
-                                                src="images/ai-saas.png"
-                                                alt="AI SaaS Platform"
-                                          />
-                                          <div class="project-links">
-                                                <a
-                                                      href="https://github.com/shreenivas-nayakawadi/saas-ai"
-                                                      target="_blank"
-                                                      aria-label="GitHub"
-                                                      ><i
-                                                            class="fab fa-github"
-                                                      ></i
-                                                ></a>
-                                                <a
-                                                      href="https://saas-ai-eta-teal.vercel.app"
-                                                      target="_blank"
-                                                      aria-label="Live Demo"
-                                                      ><i
-                                                            class="fas fa-external-link-alt"
-                                                      ></i
-                                                ></a>
-                                          </div>
-                                    </div>
-                                    <div class="project-info">
-                                          <h3>AI SaaS Platform</h3>
-                                          <div class="project-tech">
-                                                <span>Next.js</span>
-                                                <span>Tailwind CSS</span>
-                                                <span>MongoDB</span>
-                                                <span>Prisma</span>
-                                          </div>
-                                          <p>
-                                                SaaS platform with tools like
-                                                code generation and chat
-                                                interfaces, featuring secure
-                                                auth with Clerk and intelligent
-                                                services via Google AI APIs.
-                                          </p>
-                                    </div>
-                              </div>
-                              <!-- Project 5: E-commerce Store -->
-                              <div class="project-card">
-                                    <div class="project-image">
-                                          <img
-                                                src="images/new-ecommerce-store.png"
-                                                alt="E-commerce Store"
-                                          />
-                                          <div class="project-links">
-                                                <a
-                                                      href="https://github.com/shreenivas-nayakawadi/Ecommerce-new-store"
-                                                      target="_blank"
-                                                      aria-label="GitHub"
-                                                      ><i
-                                                            class="fab fa-github"
-                                                      ></i
-                                                ></a>
-                                                <a
-                                                      href="https://ecommerce-new-store.vercel.app/"
-                                                      target="_blank"
-                                                      aria-label="Live Demo"
-                                                      ><i
-                                                            class="fas fa-external-link-alt"
-                                                      ></i
-                                                ></a>
-                                          </div>
-                                    </div>
-                                    <div class="project-info">
-                                          <h3>E-commerce Store</h3>
-                                          <div class="project-tech">
-                                                <span>Next.js</span>
-                                                <span>TypeScript</span>
-                                                <span>Tailwind CSS</span>
-                                                <span>Prisma</span>
-                                          </div>
-                                          <p>
-                                                A full-stack e-commerce platform
-                                                for browsing products, managing
-                                                a cart, and completing
-                                                purchases.
-                                          </p>
-                                    </div>
-                              </div>
-
-                              <!-- Project 6: E-commerce Admin -->
-                              <div class="project-card">
-                                    <div class="project-image">
-                                          <img
-                                                src="images/ecommerce-admin.png"
-                                                alt="E-commerce Admin Dashboard"
-                                          />
-                                          <div class="project-links">
-                                                <a
-                                                      href="https://github.com/shreenivas-nayakawadi/Ecommerce-Admin"
-                                                      target="_blank"
-                                                      aria-label="GitHub"
-                                                      ><i
-                                                            class="fab fa-github"
-                                                      ></i
-                                                ></a>
-                                                <a
-                                                      href="https://ecommerce-admin-ten-alpha.vercel.app/"
-                                                      target="_blank"
-                                                      aria-label="Live Demo"
-                                                      ><i
-                                                            class="fas fa-external-link-alt"
-                                                      ></i
-                                                ></a>
-                                          </div>
-                                    </div>
-                                    <div class="project-info">
-                                          <h3>E-commerce Admin Dashboard</h3>
-                                          <div class="project-tech">
-                                                <span>Next.js</span>
-                                                <span>TypeScript</span>
-                                                <span>Prisma</span>
-                                                <span>Clerk</span>
-                                          </div>
-                                          <p>
-                                                Admin dashboard to manage
-                                                products, categories, orders,
-                                                and view sales analytics for the
-                                                e-commerce store.
-                                          </p>
-                                    </div>
-                              </div>
-
-                              <!-- Project 7: Interactive Resume -->
-                              <div class="project-card">
-                                    <div class="project-image">
-                                          <img
-                                                src="images/interactive-resume.png"
-                                                alt="Interactive Resume"
-                                          />
-                                          <div class="project-links">
-                                                <a
-                                                      href="https://github.com/shreenivas-nayakawadi/interactive-resume"
-                                                      target="_blank"
-                                                      aria-label="GitHub"
-                                                      ><i
-                                                            class="fab fa-github"
-                                                      ></i
-                                                ></a>
-                                                <a
-                                                      href="https://interactive-resume-rust-pi.vercel.app/"
-                                                      target="_blank"
-                                                      aria-label="Live Demo"
-                                                      ><i
-                                                            class="fas fa-external-link-alt"
-                                                      ></i
-                                                ></a>
-                                          </div>
-                                    </div>
-                                    <div class="project-info">
-                                          <h3>Interactive Resume</h3>
-                                          <div class="project-tech">
-                                                <span>Next.js</span>
-                                                <span>Tailwind CSS</span>
-                                                <span>Framer Motion</span>
-                                          </div>
-                                          <p>
-                                                A dynamic and engaging
-                                                interactive resume built to
-                                                showcase skills and projects
-                                                with smooth animations.
-                                          </p>
-                                    </div>
-                              </div>
-
-                              <!-- Project 8: Next.js Authentication -->
-                              <div class="project-card">
-                                    <div class="project-image">
-                                          <img
-                                                src="images/next-auth.png"
-                                                alt="Next.js Authentication System"
-                                          />
-                                          <div class="project-links">
-                                                <a
-                                                      href="https://github.com/shreenivas-nayakawadi/next-auth"
-                                                      target="_blank"
-                                                      aria-label="GitHub"
-                                                      ><i
-                                                            class="fab fa-github"
-                                                      ></i
-                                                ></a>
-                                                <a
-                                                      href="https://next-auth-zeta-lake.vercel.app/"
-                                                      target="_blank"
-                                                      aria-label="Live Demo"
-                                                      ><i
-                                                            class="fas fa-external-link-alt"
-                                                      ></i
-                                                ></a>
-                                          </div>
-                                    </div>
-                                    <div class="project-info">
-                                          <h3>Next.js Authentication System</h3>
-                                          <div class="project-tech">
-                                                <span>Next.js</span>
-                                                <span>TypeScript</span>
-                                                <span>MongoDB</span>
-                                                <span>Nodemailer</span>
-                                          </div>
-                                          <p>
-                                                A complete authentication system
-                                                featuring user registration,
-                                                login, and password reset via
-                                                email.
-                                          </p>
-                                    </div>
-                              </div>
-
-                              <!-- Project 9: Super Mall -->
-                              <div class="project-card">
-                                    <div class="project-image">
-                                          <img
-                                                src="images/super-mall.png"
-                                                alt="Super Mall"
-                                          />
-                                          <div class="project-links">
-                                                <a
-                                                      href="https://github.com/shreenivas-nayakawadi/super-mall"
-                                                      target="_blank"
-                                                      aria-label="GitHub"
-                                                      ><i
-                                                            class="fab fa-github"
-                                                      ></i
-                                                ></a>
-                                                <a
-                                                      href="https://super-mall-78902.web.app/"
-                                                      target="_blank"
-                                                      aria-label="Live Demo"
-                                                      ><i
-                                                            class="fas fa-external-link-alt"
-                                                      ></i
-                                                ></a>
-                                          </div>
-                                    </div>
-                                    <div class="project-info">
-                                          <h3>Super Mall</h3>
-                                          <div class="project-tech">
-                                                <span>React</span>
-                                                <span>Firebase</span>
-                                                <span>Tailwind CSS</span>
-                                          </div>
-                                          <p>
-                                                A responsive e-commerce
-                                                front-end application with
-                                                real-time data synchronization
-                                                using Firebase.
-                                          </p>
-                                    </div>
-                              </div>
-
-                              <!-- Project 10: Portfolio Website -->
-                              <div class="project-card">
-                                    <div class="project-image">
-                                          <img
-                                                src="images/portfolio.png"
-                                                alt="Portfolio Website"
-                                          />
-                                          <div class="project-links">
-                                                <a
-                                                      href="https://github.com/shreenivas-nayakawadi/portfolio"
-                                                      target="_blank"
-                                                      aria-label="GitHub"
-                                                      ><i
-                                                            class="fab fa-github"
-                                                      ></i
-                                                ></a>
-                                          </div>
-                                    </div>
-                                    <div class="project-info">
-                                          <h3>Portfolio Website</h3>
-                                          <div class="project-tech">
-                                                <span>HTML</span>
-                                                <span>CSS</span>
-                                                <span>JavaScript</span>
-                                          </div>
-                                          <p>
-                                                The responsive portfolio website
-                                                you are currently viewing, built
-                                                from scratch to showcase my
-                                                skills, projects, and
-                                                experience.
-                                          </p>
-                                    </div>
-                              </div>
-                        </div>
-                  </div>
-            </section>
-
-            <!-- Experience Section -->
-            <section id="experience">
-                  <div class="container">
-                        <h2 class="section-title">Experience</h2>
-                        <div class="experience-item">
-                              <div class="experience-header">
-                                    <h3>Full-Stack Web Development Intern</h3>
-                                    <span class="date"
-                                          >March 2025 - May 2025</span
-                                    >
-                              </div>
-                              <div class="experience-company">
-                                    <p>
-                                          Unified Mentor Pvt Ltd (Internship ID:
-                                          UMIP281034)
-                                    </p>
-                                    <span class="location">Remote</span>
-                              </div>
-                              <ul class="experience-details">
-                                    <li>
-                                          Completed a 2-month internship
-                                          focusing on full-stack web development
-                                    </li>
-                                    <li>
-                                          Gained hands-on experience working on
-                                          real-time applications
-                                    </li>
-                                    <li>
-                                          Demonstrated consistency and hard work
-                                          throughout the program
-                                    </li>
-                              </ul>
-                        </div>
-                  </div>
-            </section>
-
-            <!-- Contact Section -->
-            <section id="contact">
-                  <div class="container">
-                        <h2 class="section-title">Get In Touch</h2>
-                        <div class="contact-content">
-                              <div class="contact-info">
-                                    <h3>Contact Information</h3>
-                                    <ul>
-                                          <li>
-                                                <i
-                                                      class="fas fa-map-marker-alt"
-                                                ></i>
-                                                <span>Bengaluru, India</span>
-                                          </li>
-                                          <li>
-                                                <i class="fas fa-phone"></i>
-                                                <a href="tel:+916363060232"
-                                                      >+91-6363060232</a
-                                                >
-                                          </li>
-                                          <li>
-                                                <i class="fas fa-envelope"></i>
-                                                <a
-                                                      href="mailto:shreenivasnayakawadi5@gmail.com"
-                                                      >shreenivasnayakawadi5@gmail.com</a
-                                                >
-                                          </li>
-                                    </ul>
-                                    <div class="social-links">
-                                          <a
-                                                href="https://linkedin.com/in/shreenivas-nayakawadi-214184369"
-                                                target="_blank"
-                                                aria-label="LinkedIn"
-                                                ><i class="fab fa-linkedin"></i
-                                          ></a>
-                                          <a
-                                                href="https://github.com/shreenivas-nayakawadi"
-                                                target="_blank"
-                                                aria-label="GitHub"
-                                                ><i class="fab fa-github"></i
-                                          ></a>
-                                    </div>
-                              </div>
-                              <form class="contact-form" id="contactForm">
-                                    <div class="form-group">
-                                          <input
-                                                type="text"
-                                                id="name"
-                                                placeholder="Your Name"
-                                                required
-                                          />
-                                    </div>
-                                    <div class="form-group">
-                                          <input
-                                                type="email"
-                                                id="email"
-                                                placeholder="Your Email"
-                                                required
-                                          />
-                                    </div>
-                                    <div class="form-group">
-                                          <input
-                                                type="text"
-                                                id="subject"
-                                                placeholder="Subject"
-                                          />
-                                    </div>
-                                    <div class="form-group">
-                                          <textarea
-                                                id="message"
-                                                rows="5"
-                                                placeholder="Your Message"
-                                                required
-                                          ></textarea>
-                                    </div>
-                                    <button
-                                          type="submit"
-                                          class="btn btn-primary"
-                                    >
-                                          Send Message
-                                    </button>
-                              </form>
-                        </div>
-                  </div>
-            </section>
-
-            <!-- Footer -->
-            <footer>
-                  <div class="container">
-                        <p>
-                              &copy; <span id="year"></span> Shreenivas
-                              Nayakawadi. All rights reserved.
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Get to know me</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-intro">
+                        <p class="lead">
+                            I'm an enthusiastic and detail-oriented <strong>Information Science and Engineering</strong> 
+                            student with hands-on experience in full-stack web development through internships and 
+                            academic projects.
                         </p>
-                  </div>
-            </footer>
+                        <p>
+                            Proficient in <strong>React, Next.js, Node.js, and Firebase</strong>, I have a strong 
+                            foundation in building responsive and scalable applications. I'm eager to leverage my 
+                            technical skills, problem-solving abilities, and passion for learning to contribute to 
+                            innovative projects.
+                        </p>
+                        <p>
+                            When I'm not coding, you'll find me exploring new technologies, contributing to open-source 
+                            projects, or learning about system design and architecture.
+                        </p>
+                    </div>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h4>Clean Code</h4>
+                                <p>Writing maintainable, scalable code following best practices</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h4>Performance</h4>
+                                <p>Optimizing applications for speed and efficiency</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h4>Problem Solver</h4>
+                                <p>Tackling complex challenges with creative solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-education">
+                    <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                    <div class="education-timeline">
+                        <div class="education-item">
+                            <div class="education-marker"></div>
+                            <div class="education-content">
+                                <div class="education-date">2022 - 2026</div>
+                                <h4>Dayananda Sagar College of Engineering</h4>
+                                <p class="degree">B.E. in Information Science and Engineering</p>
+                                <div class="education-badge">
+                                    <i class="fas fa-star"></i>
+                                    <span>CGPA: 9.02</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="education-item">
+                            <div class="education-marker"></div>
+                            <div class="education-content">
+                                <div class="education-date">2019 - 2021</div>
+                                <h4>St. Joseph's PU College</h4>
+                                <p class="degree">Science (PCMCs) - Vijayapura, Karnataka</p>
+                                <div class="education-badge">
+                                    <i class="fas fa-trophy"></i>
+                                    <span>99.66%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="education-item">
+                            <div class="education-marker"></div>
+                            <div class="education-content">
+                                <div class="education-date">2019</div>
+                                <h4>St. Joseph's Eng Med High School</h4>
+                                <p class="degree">Class 10 - Vijayapura, Karnataka</p>
+                                <div class="education-badge">
+                                    <i class="fas fa-medal"></i>
+                                    <span>93.12%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <script src="script.js"></script>
-      </body>
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">My journey</span>
+                <h2 class="section-title">Experience</h2>
+            </div>
+            <div class="experience-timeline">
+                <div class="timeline-line"></div>
+                <!-- Current Internship -->
+                <div class="experience-item">
+                    <div class="experience-marker">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <div class="experience-title">
+                                <h3>Software Engineer Intern</h3>
+                                <span class="company">Paidcoders AI Labs LLP</span>
+                            </div>
+                            <div class="experience-meta">
+                                <span class="date"><i class="far fa-calendar"></i> October 2025 - Present</span>
+                                <span class="location"><i class="fas fa-map-marker-alt"></i> Remote</span>
+                            </div>
+                        </div>
+                        <div class="experience-badge-current">
+                            <i class="fas fa-circle"></i>
+                            <span>Currently Working</span>
+                        </div>
+                        <ul class="experience-details">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Working on software development tasks and contributing to web application development
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Developing and maintaining scalable full-stack web applications using MERN stack
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Building responsive user interfaces with React and Tailwind CSS
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Implementing real-time features and authentication using Firebase
+                            </li>
+                        </ul>
+                        <div class="experience-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Firebase</span>
+                            <span>Tailwind CSS</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Previous Internship -->
+                <div class="experience-item">
+                    <div class="experience-marker">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <div class="experience-title">
+                                <h3>Full-Stack Web Development Intern</h3>
+                                <span class="company">Unified Mentor Pvt Ltd</span>
+                            </div>
+                            <div class="experience-meta">
+                                <span class="date"><i class="far fa-calendar"></i> March 2025 - May 2025</span>
+                                <span class="location"><i class="fas fa-map-marker-alt"></i> Remote</span>
+                            </div>
+                        </div>
+                        <div class="experience-id">
+                            <i class="fas fa-id-badge"></i>
+                            <span>Internship ID: UMIP281034</span>
+                        </div>
+                        <ul class="experience-details">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Worked on full-stack web development projects involving real-time applications
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Developed and deployed web applications using React, Node.js, and MongoDB
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Implemented RESTful APIs and integrated third-party services
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Demonstrated consistency, dedication, and technical excellence throughout the program
+                            </li>
+                        </ul>
+                        <div class="experience-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Express.js</span>
+                            <span>REST APIs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">What I work with</span>
+                <h2 class="section-title">Skills & Technologies</h2>
+            </div>
+            <div class="skills-content">
+                <div class="skills-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Programming Languages</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-java"></i></div>
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-c"></i></div>
+                            <span>C</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-code"></i></div>
+                            <span>TypeScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-python"></i></div>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>Frontend Development</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-react"></i></div>
+                            <span>React.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-n"></i></div>
+                            <span>Next.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-layer-group"></i></div>
+                            <span>Redux Toolkit</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-sitemap"></i></div>
+                            <span>Context API</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-bolt"></i></div>
+                            <span>Zustand</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-wind"></i></div>
+                            <span>Tailwind CSS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>Backend & Databases</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-server"></i></div>
+                            <span>Express.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-plug"></i></div>
+                            <span>RESTful APIs</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-project-diagram"></i></div>
+                            <span>Prisma</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-fire"></i></div>
+                            <span>Firebase</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-table"></i></div>
+                            <span>SQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>DevOps & Tools</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-github"></i></div>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-docker"></i></div>
+                            <span>Docker</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-cogs"></i></div>
+                            <span>GitHub Actions</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-aws"></i></div>
+                            <span>AWS EC2</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-dharmachakra"></i></div>
+                            <span>Kubernetes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">My recent work</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="ai">AI Powered</button>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1: AI SaaS Platform -->
+                <div class="project-card" data-category="fullstack ai">
+                    <div class="project-image">
+                        <img src="images/ai-saas.png" alt="AI SaaS Platform" loading="lazy" />
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/shreenivas-nayakawadi/saas-ai" target="_blank" rel="noopener" class="project-link" aria-label="View Code">
+                                    <i class="fab fa-github"></i>
+                                    <span>Code</span>
+                                </a>
+                                <a href="https://saas-ai-eta-teal.vercel.app" target="_blank" rel="noopener" class="project-link" aria-label="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Demo</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-badge">Featured</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>AI SaaS Platform</h3>
+                        <p>SaaS platform with AI-powered tools like code generation and chat interfaces, featuring secure authentication with Clerk and intelligent services via Google AI APIs.</p>
+                        <div class="project-tech">
+                            <span>Next.js</span>
+                            <span>Tailwind CSS</span>
+                            <span>MongoDB</span>
+                            <span>Prisma</span>
+                            <span>Google AI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Budget Management System -->
+                <div class="project-card" data-category="fullstack ai">
+                    <div class="project-image">
+                        <img src="images/budget.png" alt="Budget Management System" loading="lazy" />
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/shreenivas-nayakawadi/budget_management" target="_blank" rel="noopener" class="project-link" aria-label="View Code">
+                                    <i class="fab fa-github"></i>
+                                    <span>Code</span>
+                                </a>
+                                <a href="https://budget-management-awin.vercel.app" target="_blank" rel="noopener" class="project-link" aria-label="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Demo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Budget Management System</h3>
+                        <p>AI-powered receipt scanning and spending insights with user authentication, expense tracking, and category-wise budgeting using Google Gemini AI.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Gemini AI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: E-commerce Store -->
+                <div class="project-card" data-category="fullstack">
+                    <div class="project-image">
+                        <img src="images/new-ecommerce-store.png" alt="E-commerce Store" loading="lazy" />
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/shreenivas-nayakawadi/Ecommerce-new-store" target="_blank" rel="noopener" class="project-link" aria-label="View Code">
+                                    <i class="fab fa-github"></i>
+                                    <span>Code</span>
+                                </a>
+                                <a href="https://ecommerce-new-store.vercel.app/" target="_blank" rel="noopener" class="project-link" aria-label="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Demo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>E-commerce Store</h3>
+                        <p>A full-stack e-commerce platform for browsing products, managing cart, and completing purchases with seamless checkout experience.</p>
+                        <div class="project-tech">
+                            <span>Next.js</span>
+                            <span>TypeScript</span>
+                            <span>Tailwind CSS</span>
+                            <span>Prisma</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: E-commerce Admin -->
+                <div class="project-card" data-category="fullstack">
+                    <div class="project-image">
+                        <img src="images/ecommerce-admin.png" alt="E-commerce Admin Dashboard" loading="lazy" />
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/shreenivas-nayakawadi/Ecommerce-Admin" target="_blank" rel="noopener" class="project-link" aria-label="View Code">
+                                    <i class="fab fa-github"></i>
+                                    <span>Code</span>
+                                </a>
+                                <a href="https://ecommerce-admin-ten-alpha.vercel.app/" target="_blank" rel="noopener" class="project-link" aria-label="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Demo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>E-commerce Admin Dashboard</h3>
+                        <p>Admin dashboard to manage products, categories, orders, and view sales analytics for the e-commerce store with real-time updates.</p>
+                        <div class="project-tech">
+                            <span>Next.js</span>
+                            <span>TypeScript</span>
+                            <span>Prisma</span>
+                            <span>Clerk</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Cruise Ship Management -->
+                <div class="project-card" data-category="fullstack">
+                    <div class="project-image">
+                        <img src="images/cruise.png" alt="Cruise Ship Management System" loading="lazy" />
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/shreenivas-nayakawadi/cruise-ship-management" target="_blank" rel="noopener" class="project-link" aria-label="View Code">
+                                    <i class="fab fa-github"></i>
+                                    <span>Code</span>
+                                </a>
+                                <a href="https://cruise-ship-management-ca45e.web.app" target="_blank" rel="noopener" class="project-link" aria-label="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Demo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Cruise Ship Management</h3>
+                        <p>Multi-role support system with service booking, movie scheduling, food ordering, and inventory tracking using Firebase for real-time updates.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Tailwind CSS</span>
+                            <span>Firebase</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: Interactive Resume -->
+                <div class="project-card" data-category="frontend">
+                    <div class="project-image">
+                        <img src="images/interactive-resume.png" alt="Interactive Resume" loading="lazy" />
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/shreenivas-nayakawadi/interactive-resume" target="_blank" rel="noopener" class="project-link" aria-label="View Code">
+                                    <i class="fab fa-github"></i>
+                                    <span>Code</span>
+                                </a>
+                                <a href="https://interactive-resume-rust-pi.vercel.app/" target="_blank" rel="noopener" class="project-link" aria-label="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Demo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Interactive Resume</h3>
+                        <p>A dynamic and engaging interactive resume built to showcase skills and projects with smooth animations using Framer Motion.</p>
+                        <div class="project-tech">
+                            <span>Next.js</span>
+                            <span>Tailwind CSS</span>
+                            <span>Framer Motion</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7: Next.js Authentication -->
+                <div class="project-card" data-category="fullstack">
+                    <div class="project-image">
+                        <img src="images/next-auth.png" alt="Next.js Authentication System" loading="lazy" />
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/shreenivas-nayakawadi/next-auth" target="_blank" rel="noopener" class="project-link" aria-label="View Code">
+                                    <i class="fab fa-github"></i>
+                                    <span>Code</span>
+                                </a>
+                                <a href="https://next-auth-zeta-lake.vercel.app/" target="_blank" rel="noopener" class="project-link" aria-label="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Demo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Next.js Authentication</h3>
+                        <p>A complete authentication system featuring user registration, login, password reset via email, and secure session management.</p>
+                        <div class="project-tech">
+                            <span>Next.js</span>
+                            <span>TypeScript</span>
+                            <span>MongoDB</span>
+                            <span>Nodemailer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 8: Academic Calendar -->
+                <div class="project-card" data-category="frontend">
+                    <div class="project-image">
+                        <img src="images/calender.jpg" alt="Academic Calendar Generator" loading="lazy" />
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/shreenivas-nayakawadi/Calender_of_events_generator" target="_blank" rel="noopener" class="project-link" aria-label="View Code">
+                                    <i class="fab fa-github"></i>
+                                    <span>Code</span>
+                                </a>
+                                <a href="https://shreenivas-nayakawadi.github.io/Calender_of_events_generator" target="_blank" rel="noopener" class="project-link" aria-label="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Demo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Academic Calendar Generator</h3>
+                        <p>Web-based app to generate academic calendars with holiday and event management, featuring export as JPEG and automatic conflict detection.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 9: Super Mall -->
+                <div class="project-card" data-category="frontend">
+                    <div class="project-image">
+                        <img src="images/super-mall.png" alt="Super Mall" loading="lazy" />
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/shreenivas-nayakawadi/super-mall" target="_blank" rel="noopener" class="project-link" aria-label="View Code">
+                                    <i class="fab fa-github"></i>
+                                    <span>Code</span>
+                                </a>
+                                <a href="https://super-mall-78902.web.app/" target="_blank" rel="noopener" class="project-link" aria-label="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Demo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Super Mall</h3>
+                        <p>A responsive e-commerce front-end application with real-time data synchronization using Firebase and modern UI/UX design.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Firebase</span>
+                            <span>Tailwind CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 10: Portfolio -->
+                <div class="project-card" data-category="frontend">
+                    <div class="project-image">
+                        <img src="images/portfolio.png" alt="Portfolio Website" loading="lazy" />
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/shreenivas-nayakawadi/portfolio" target="_blank" rel="noopener" class="project-link" aria-label="View Code">
+                                    <i class="fab fa-github"></i>
+                                    <span>Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Portfolio Website</h3>
+                        <p>This responsive portfolio website you're viewing, built from scratch with modern design principles and smooth animations.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Let's connect</span>
+                <h2 class="section-title">Get In Touch</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-intro">
+                        <h3>Let's work together</h3>
+                        <p>I'm currently available for freelance work and full-time opportunities. If you have a project in mind or just want to say hi, feel free to reach out!</p>
+                    </div>
+                    <div class="contact-cards">
+                        <a href="mailto:shreenivasnayakawadi5@gmail.com" class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-card-content">
+                                <span class="contact-card-label">Email</span>
+                                <span class="contact-card-value">shreenivasnayakawadi5@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="tel:+916363060232" class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-card-content">
+                                <span class="contact-card-label">Phone</span>
+                                <span class="contact-card-value">+91-6363060232</span>
+                            </div>
+                        </a>
+                        <div class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-card-content">
+                                <span class="contact-card-label">Location</span>
+                                <span class="contact-card-value">Bengaluru, India</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <h4>Find me on</h4>
+                        <div class="social-links">
+                            <a href="https://github.com/shreenivas-nayakawadi" target="_blank" rel="noopener" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/shreenivas-nayakawadi-214184369" target="_blank" rel="noopener" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="mailto:shreenivasnayakawadi5@gmail.com" aria-label="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required />
+                        <label for="name">Your Name</label>
+                        <span class="form-line"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required />
+                        <label for="email">Your Email</label>
+                        <span class="form-line"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" />
+                        <label for="subject">Subject</label>
+                        <span class="form-line"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                        <label for="message">Your Message</label>
+                        <span class="form-line"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <span class="logo-bracket">&lt;</span>
+                        <span class="logo-text">Shreenivas</span>
+                        <span class="logo-bracket">/&gt;</span>
+                    </a>
+                    <p>Building digital experiences that matter.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-nav">
+                        <h4>Quick Links</h4>
+                        <a href="#about">About</a>
+                        <a href="#experience">Experience</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    <div class="footer-social">
+                        <h4>Connect</h4>
+                        <div class="social-icons">
+                            <a href="https://github.com/shreenivas-nayakawadi" target="_blank" rel="noopener" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/shreenivas-nayakawadi-214184369" target="_blank" rel="noopener" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="mailto:shreenivasnayakawadi5@gmail.com" aria-label="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Shreenivas Nayakawadi. Crafted with <i class="fas fa-heart"></i> and lots of ☕</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
 </html>
