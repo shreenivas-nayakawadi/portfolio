@@ -1,321 +1,408 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Shreenivas Nayakawadi — Full-Stack Developer</title>
-<meta name="description" content="Full-stack developer in Bengaluru. Currently building ERP and finance tooling at Arnifi with Strapi, PostgreSQL and Next.js." />
+<meta name="description" content="Full-stack developer in Bengaluru building ERP and finance tooling at Arnifi with Next.js, Strapi and PostgreSQL." />
 <meta name="author" content="Shreenivas Nayakawadi" />
+<meta name="theme-color" content="#0a0a12" />
 <meta property="og:title" content="Shreenivas Nayakawadi — Full-Stack Developer" />
-<meta property="og:description" content="Full-stack developer in Bengaluru. Currently building ERP and finance tooling at Arnifi." />
+<meta property="og:description" content="Building ERP and finance tooling at Arnifi. Next.js, Strapi, PostgreSQL." />
 <meta property="og:type" content="website" />
 <link rel="icon" type="image/png" href="images/portfolio.ico" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.97.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.5 3.17-1.18 3.17-1.18.63 1.59.24 2.76.12 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.4-5.27 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></symbol>
-  <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05a3.74 3.74 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13Zm1.78 13.02H3.55V9h3.57v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.72C24 .77 23.2 0 22.22 0Z"/></symbol>
-  <symbol id="i-mail" viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4.24-8 4.99-8-4.99V6l8 5 8-5v2.24Z"/></symbol>
-  <symbol id="i-link" viewBox="0 0 24 24"><path fill="currentColor" d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7ZM19 19H5V5h6V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-2v6Z"/></symbol>
-  <symbol id="i-sun" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17a5 5 0 1 1 0-10 5 5 0 0 1 0 10Zm0-14a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0V4a1 1 0 0 1 1-1Zm0 16a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0v-1a1 1 0 0 1 1-1ZM4 11h1a1 1 0 1 1 0 2H4a1 1 0 1 1 0-2Zm15 0h1a1 1 0 1 1 0 2h-1a1 1 0 1 1 0-2ZM5.64 4.22l.7.71a1 1 0 0 1-1.41 1.41l-.71-.7a1 1 0 0 1 1.42-1.42Zm12.02 12.02.7.71a1 1 0 0 1-1.41 1.41l-.71-.7a1 1 0 0 1 1.42-1.42ZM18.36 4.22a1 1 0 0 1 1.42 1.42l-.71.7a1 1 0 1 1-1.41-1.41l.7-.71ZM6.34 16.24a1 1 0 0 1 1.42 1.42l-.71.7a1 1 0 0 1-1.41-1.41l.7-.71Z"/></symbol>
-  <symbol id="i-moon" viewBox="0 0 24 24"><path fill="currentColor" d="M21.64 13a9 9 0 1 1-10.63-10.6 1 1 0 0 1 1.16 1.35 7 7 0 0 0 8.11 8.1 1 1 0 0 1 1.36 1.16Z"/></symbol>
+<symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.97.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.5 3.17-1.18 3.17-1.18.63 1.59.24 2.76.12 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.4-5.27 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></symbol>
+<symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05a3.74 3.74 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13Zm1.78 13.02H3.55V9h3.57v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.72C24 .77 23.2 0 22.22 0Z"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4.24-8 4.99-8-4.99V6l8 5 8-5v2.24Z"/></symbol>
+<symbol id="i-link" viewBox="0 0 24 24"><path fill="currentColor" d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7ZM19 19H5V5h6V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-2v6Z"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.2.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></symbol>
+<symbol id="i-download" viewBox="0 0 24 24"><path fill="currentColor" d="M12 15.6 6.4 10l1.4-1.4 3.2 3.2V3h2v8.8l3.2-3.2L17.6 10 12 15.6ZM5 19v-2h14v2H5Z"/></symbol>
+<symbol id="i-sun" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17a5 5 0 1 1 0-10 5 5 0 0 1 0 10Zm0-14a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0V4a1 1 0 0 1 1-1Zm0 16a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0v-1a1 1 0 0 1 1-1ZM4 11h1a1 1 0 1 1 0 2H4a1 1 0 1 1 0-2Zm15 0h1a1 1 0 1 1 0 2h-1a1 1 0 1 1 0-2ZM5.64 4.22l.7.71a1 1 0 0 1-1.41 1.41l-.71-.7a1 1 0 0 1 1.42-1.42Zm12.02 12.02.7.71a1 1 0 0 1-1.41 1.41l-.71-.7a1 1 0 0 1 1.42-1.42ZM18.36 4.22a1 1 0 0 1 1.42 1.42l-.71.7a1 1 0 1 1-1.41-1.41l.7-.71ZM6.34 16.24a1 1 0 0 1 1.42 1.42l-.71.7a1 1 0 0 1-1.41-1.41l.7-.71Z"/></symbol>
+<symbol id="i-moon" viewBox="0 0 24 24"><path fill="currentColor" d="M21.64 13a9 9 0 1 1-10.63-10.6 1 1 0 0 1 1.16 1.35 7 7 0 0 0 8.11 8.1 1 1 0 0 1 1.36 1.16Z"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path fill="currentColor" d="m13.2 5.6 6.4 6.4-6.4 6.4-1.4-1.4 4-4H4v-2h11.8l-4-4 1.4-1.4Z"/></symbol>
+<symbol id="i-code" viewBox="0 0 24 24"><path fill="currentColor" d="m8.7 16.9-5-5 5-5 1.4 1.4-3.6 3.6 3.6 3.6-1.4 1.4Zm6.6 0-1.4-1.4 3.6-3.6-3.6-3.6 1.4-1.4 5 5-5 5Z"/></symbol>
+<symbol id="i-layers" viewBox="0 0 24 24"><path fill="currentColor" d="m12 2 9 5-9 5-9-5 9-5Zm7.1 8.4L21 11.5l-9 5-9-5 1.9-1.1L12 14l7.1-3.6Zm0 4L21 15.5l-9 5-9-5 1.9-1.1L12 18l7.1-3.6Z"/></symbol>
+<symbol id="i-server" viewBox="0 0 24 24"><path fill="currentColor" d="M4 3h16a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Zm0 11h16a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-5a1 1 0 0 1 1-1Zm3 1.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Zm0-11a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z"/></symbol>
+<symbol id="i-db" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2c4.4 0 8 1.3 8 3v14c0 1.7-3.6 3-8 3s-8-1.3-8-3V5c0-1.7 3.6-3 8-3Zm6 8.6c-1.5.9-3.8 1.4-6 1.4s-4.5-.5-6-1.4v3c.2.5 2.5 1.4 6 1.4s5.8-.9 6-1.4v-3ZM12 4C8.5 4 6.2 4.9 6 5.4c.2.6 2.5 1.6 6 1.6s5.8-1 6-1.6C17.8 4.9 15.5 4 12 4Zm0 16c3.5 0 5.8-.9 6-1.4v-2.9c-1.5.8-3.8 1.3-6 1.3s-4.5-.5-6-1.3v2.9c.2.5 2.5 1.4 6 1.4Z"/></symbol>
+<symbol id="i-cloud" viewBox="0 0 24 24"><path fill="currentColor" d="M6.5 19A4.5 4.5 0 0 1 5.6 10a6 6 0 0 1 11.7-1.4A4.5 4.5 0 0 1 17 19H6.5Z"/></symbol>
+<symbol id="i-cap" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3ZM5 13.2V17c0 1.7 3.1 3 7 3s7-1.3 7-3v-3.8l-7 3.8-7-3.8Z"/></symbol>
 </svg>
 
 <a class="skip" href="#main">Skip to content</a>
 
-<header class="site-header">
-  <div class="wrap header-inner">
-    <a href="#" class="brand">Shreenivas Nayakawadi</a>
-    <nav class="nav" aria-label="Primary">
+<div class="bg-fx" aria-hidden="true">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="grid-fade"></div>
+</div>
+
+<header class="nav-bar">
+  <div class="wrap nav-inner">
+    <a href="#" class="logo"><span class="logo-mark">SN</span><span class="logo-name">Shreenivas</span></a>
+    <nav class="nav" id="nav" aria-label="Primary">
+      <a href="#about">About</a>
       <a href="#experience">Experience</a>
       <a href="#work">Work</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
     </nav>
-    <div class="header-actions">
-      <a class="btn btn-ghost" href="ShreenivasNayakawadi_1DS22IS143-1.pdf" download>Résumé</a>
-      <button id="themeToggle" class="icon-btn" aria-label="Toggle colour theme">
+    <div class="nav-actions">
+      <a class="btn btn-outline btn-sm" href="ShreenivasNayakawadi_1DS22IS143-1.pdf" download>
+        <svg class="ic"><use href="#i-download"/></svg><span>Résumé</span>
+      </a>
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">
         <svg class="ic light-only"><use href="#i-moon"/></svg>
         <svg class="ic dark-only"><use href="#i-sun"/></svg>
       </button>
-      <button id="navToggle" class="icon-btn nav-toggle" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+      <button id="navToggle" class="icon-btn burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
 </header>
 
 <main id="main">
 
-<section class="intro wrap">
-  <div class="intro-text">
-    <h1>Shreenivas Nayakawadi</h1>
-    <p class="role">Full-stack developer — Bengaluru, India</p>
-    <p class="lede">
-      I build web applications that people use to do their job. Right now that means ERP and
-      finance tooling at Arnifi — invoicing, vendor payments and order workflows on a Strapi and
-      PostgreSQL backend with a Next.js frontend.
-    </p>
-    <p class="lede">
-      I care about understanding the problem before writing the code, and about leaving things
-      readable for whoever picks them up next.
-    </p>
-    <div class="intro-links">
-      <a class="btn btn-primary" href="#work">See my work</a>
-      <a class="iconlink" href="https://github.com/shreenivas-nayakawadi" target="_blank" rel="noopener">
-        <svg class="ic"><use href="#i-github"/></svg> GitHub
-      </a>
-      <a class="iconlink" href="https://linkedin.com/in/shreenivas-nayakawadi-214184369" target="_blank" rel="noopener">
-        <svg class="ic"><use href="#i-linkedin"/></svg> LinkedIn
-      </a>
-      <a class="iconlink" href="mailto:shreenivasnayakawadi5@gmail.com">
-        <svg class="ic"><use href="#i-mail"/></svg> Email
-      </a>
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div class="hero-copy reveal">
+      <span class="pill"><span class="pulse"></span>Available for full-time roles</span>
+      <h1>Hi, I'm <span class="grad">Shreenivas</span><br />I build software people<br />actually work in.</h1>
+      <p class="hero-lede">
+        Full-stack developer in Bengaluru. Currently shipping ERP and finance tooling at
+        <strong>Arnifi</strong> — invoicing, vendor payments and order workflows on Strapi,
+        PostgreSQL and Next.js.
+      </p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#work">View my work <svg class="ic"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn-outline" href="#contact">Get in touch</a>
+      </div>
+      <div class="hero-social">
+        <a href="https://github.com/shreenivas-nayakawadi" target="_blank" rel="noopener" aria-label="GitHub"><svg class="ic"><use href="#i-github"/></svg></a>
+        <a href="https://linkedin.com/in/shreenivas-nayakawadi-214184369" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="ic"><use href="#i-linkedin"/></svg></a>
+        <a href="mailto:shreenivasnayakawadi5@gmail.com" aria-label="Email"><svg class="ic"><use href="#i-mail"/></svg></a>
+      </div>
+    </div>
+    <div class="hero-visual reveal">
+      <div class="photo-frame">
+        <img src="images/photo.png" alt="Shreenivas Nayakawadi" width="320" height="320" />
+      </div>
+      <div class="chip chip-a">Next.js</div>
+      <div class="chip chip-b">PostgreSQL</div>
+      <div class="chip chip-c">TypeScript</div>
     </div>
   </div>
-  <img class="avatar" src="images/photo.png" alt="Shreenivas Nayakawadi" width="160" height="160" />
+
+  <div class="wrap">
+    <div class="stats reveal">
+      <div class="stat"><span class="stat-num" data-count="1430">0</span><span class="stat-label">Commits shipped at Arnifi</span></div>
+      <div class="stat"><span class="stat-num" data-count="4">0</span><span class="stat-label">Production repositories</span></div>
+      <div class="stat"><span class="stat-num" data-count="3">0</span><span class="stat-label">Developer internships</span></div>
+      <div class="stat"><span class="stat-num" data-count="8.98" data-decimals="2">0</span><span class="stat-label">CGPA</span></div>
+    </div>
+  </div>
 </section>
 
-<section id="experience" class="wrap">
-  <h2>Experience</h2>
-
-  <article class="role-entry">
-    <div class="role-meta">
-      <span class="tag tag-live">Current</span>
-      <time>Apr 2026 — Present</time>
+<section id="about" class="section">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">About</span>
+      <h2>Building for people who have a job to finish</h2>
     </div>
-    <div class="role-body">
-      <h3>Full Stack Intern · <span class="org">Arnifi</span></h3>
-      <p class="role-context">
-        Corporate services firm handling company formation, visas and compliance across the UAE,
-        Saudi Arabia, Singapore and the USA. I work on the internal ERP used daily by the finance
-        and operations teams, across four repositories.
-      </p>
-      <ul>
-        <li>
-          <strong>Vendor payments.</strong> Consolidated a fragmented payment model into one
-          payment per order with an explicit Pending → Requested → Paid lifecycle, so
-          reconciliation no longer depended on manual cross-checking.
-        </li>
-        <li>
-          <strong>Invoicing.</strong> Built proforma and retainer invoice generation, including
-          percentage-based partial billing against an order.
-        </li>
-        <li>
-          <strong>Notion migration.</strong> Moved cash collection and related workflows out of
-          Notion into the ERP, removing an operational dependency the finance team had been
-          working around.
-        </li>
-        <li>
-          <strong>Finance dashboards.</strong> Replaced hand-compiled reports with self-serve
-          stat cards and analytics.
-        </li>
-      </ul>
-      <p class="stack">Strapi · PostgreSQL · Next.js · React · TypeScript · Redux Toolkit · MUI · AWS S3 &amp; SES · Notion API</p>
+    <div class="about-grid">
+      <div class="about-copy reveal">
+        <p>
+          I'm a final-year Information Science student at Dayananda Sagar College of Engineering,
+          working full-time hours on a live ERP that finance and operations teams open every
+          morning. That changes how you write code — a wrong number is not a bug report, it is
+          someone's invoice.
+        </p>
+        <p>
+          Most of my work sits where the frontend meets real business rules: invoicing, payment
+          lifecycles, reconciliation, dashboards. I like the part where you have to sit with a
+          non-technical user and figure out what they actually need before writing a line.
+        </p>
+        <p>
+          Outside work I build things end to end — auth systems, commerce platforms, AI tools —
+          because shipping the whole thing teaches you what half-building never does.
+        </p>
+      </div>
+      <div class="about-cards">
+        <div class="mini-card reveal">
+          <svg class="ic ic-lg"><use href="#i-layers"/></svg>
+          <h3>Full-stack, genuinely</h3>
+          <p>Schema to pixel. I have owned features from database migration through to the button a user clicks.</p>
+        </div>
+        <div class="mini-card reveal">
+          <svg class="ic ic-lg"><use href="#i-server"/></svg>
+          <h3>Production discipline</h3>
+          <p>Branch per feature, pull requests, peer review, and a healthy fear of touching finance logic carelessly.</p>
+        </div>
+        <div class="mini-card reveal">
+          <svg class="ic ic-lg"><use href="#i-code"/></svg>
+          <h3>Readable over clever</h3>
+          <p>Code gets read far more than written. I optimise for the person who opens the file in six months.</p>
+        </div>
+      </div>
     </div>
-  </article>
-
-  <article class="role-entry">
-    <div class="role-meta"><time>Oct 2025 — Mar 2026</time></div>
-    <div class="role-body">
-      <h3>Software Engineer Intern · <span class="org">Paidcoders AI Labs LLP</span> <span class="muted">· Remote</span></h3>
-      <ul>
-        <li>Built and maintained full-stack web applications on the MERN stack.</li>
-        <li>Developed responsive interfaces in React and Tailwind CSS.</li>
-        <li>Implemented real-time features and authentication with Firebase.</li>
-      </ul>
-      <p class="stack">React · Node.js · MongoDB · Firebase · Tailwind CSS</p>
-    </div>
-  </article>
-
-  <article class="role-entry">
-    <div class="role-meta"><time>Mar 2025 — May 2025</time></div>
-    <div class="role-body">
-      <h3>Full-Stack Web Development Intern · <span class="org">Unified Mentor Pvt Ltd</span> <span class="muted">· Remote</span></h3>
-      <ul>
-        <li>Delivered full-stack projects involving real-time application features.</li>
-        <li>Built and deployed applications with React, Node.js and MongoDB.</li>
-        <li>Implemented REST APIs and integrated third-party services.</li>
-      </ul>
-      <p class="stack">React · Node.js · Express · MongoDB · REST APIs</p>
-    </div>
-  </article>
+  </div>
 </section>
 
-<section id="work" class="wrap">
-  <h2>Selected work</h2>
-  <p class="section-note">Personal projects. My Arnifi work lives in private company repositories.</p>
-
-  <article class="project">
-    <div class="project-text">
-      <h3>E-commerce platform</h3>
-      <p class="project-sub">Storefront and admin dashboard</p>
-      <p>
-        Two Next.js applications over one shared Prisma data model. The admin side covers
-        products, categories, sizes, colours, billboards and orders, with Stripe for payments and
-        Cloudinary for media. The storefront handles browsing, filtering, cart and checkout. The
-        interesting part was keeping two independently deployed apps honest against a single schema.
-      </p>
-      <p class="stack">Next.js 15 · React 19 · TypeScript · Prisma · Stripe · Clerk · Cloudinary · Zustand</p>
-      <p class="project-links">
-        <a href="https://github.com/shreenivas-nayakawadi/Ecommerce-new-store" target="_blank" rel="noopener"><svg class="ic"><use href="#i-github"/></svg> Storefront code</a>
-        <a href="https://github.com/shreenivas-nayakawadi/Ecommerce-Admin" target="_blank" rel="noopener"><svg class="ic"><use href="#i-github"/></svg> Admin code</a>
-        <a href="https://ecommerce-new-store.vercel.app/" target="_blank" rel="noopener"><svg class="ic"><use href="#i-link"/></svg> Live store</a>
-        <a href="https://ecommerce-admin-ten-alpha.vercel.app/" target="_blank" rel="noopener"><svg class="ic"><use href="#i-link"/></svg> Live admin</a>
-      </p>
+<section id="experience" class="section alt">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Experience</span>
+      <h2>Where I've worked</h2>
     </div>
-    <img src="images/new-ecommerce-store.png" alt="E-commerce storefront" loading="lazy" />
-  </article>
 
-  <article class="project">
-    <div class="project-text">
-      <h3>Budget management system</h3>
-      <p class="project-sub">Receipt scanning and spending insights</p>
-      <p>
-        Upload a receipt photo and Gemini extracts the line items, amount and category, so expenses
-        get logged without typing. On top of that sits authentication, category-wise budgets and a
-        dashboard of where the money actually went.
-      </p>
-      <p class="stack">React · Node.js · MongoDB · Google Gemini</p>
-      <p class="project-links">
-        <a href="https://github.com/shreenivas-nayakawadi/budget_management" target="_blank" rel="noopener"><svg class="ic"><use href="#i-github"/></svg> Code</a>
-        <a href="https://budget-management-awin.vercel.app" target="_blank" rel="noopener"><svg class="ic"><use href="#i-link"/></svg> Live</a>
-      </p>
+    <div class="timeline">
+      <article class="tl-item reveal">
+        <div class="tl-dot"><span></span></div>
+        <div class="tl-card featured">
+          <div class="tl-top">
+            <div>
+              <h3>Full Stack Intern</h3>
+              <p class="org">Arnifi <span class="sep">·</span> <span class="muted">Company formation &amp; corporate services — UAE, Saudi, Singapore, USA</span></p>
+            </div>
+            <div class="tl-meta">
+              <span class="badge badge-live"><span class="pulse"></span>Current</span>
+              <time>Apr 2026 — Present</time>
+            </div>
+          </div>
+          <ul class="bullets">
+            <li><strong>Vendor payments.</strong> Consolidated a fragmented payment model into one payment per order with an explicit Pending → Requested → Paid lifecycle, so reconciliation stopped depending on manual cross-checking.</li>
+            <li><strong>Invoicing.</strong> Built proforma and retainer invoice generation, including percentage-based partial billing against an order.</li>
+            <li><strong>Notion migration.</strong> Moved cash collection and related workflows out of Notion into the ERP, removing an operational dependency the finance team had been working around.</li>
+            <li><strong>Finance dashboards.</strong> Replaced hand-compiled reports with self-serve stat cards and analytics.</li>
+          </ul>
+          <div class="chips">
+            <span>Strapi</span><span>PostgreSQL</span><span>Next.js</span><span>React</span><span>TypeScript</span><span>Redux Toolkit</span><span>MUI</span><span>AWS S3 &amp; SES</span><span>Notion API</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="tl-item reveal">
+        <div class="tl-dot"><span></span></div>
+        <div class="tl-card">
+          <div class="tl-top">
+            <div>
+              <h3>Software Engineer Intern</h3>
+              <p class="org">Paidcoders AI Labs LLP <span class="sep">·</span> <span class="muted">Remote</span></p>
+            </div>
+            <div class="tl-meta"><time>Oct 2025 — Mar 2026</time></div>
+          </div>
+          <ul class="bullets">
+            <li>Built and maintained full-stack web applications on the MERN stack.</li>
+            <li>Developed responsive interfaces with React and Tailwind CSS.</li>
+            <li>Implemented real-time features and authentication with Firebase.</li>
+          </ul>
+          <div class="chips"><span>React</span><span>Node.js</span><span>MongoDB</span><span>Firebase</span><span>Tailwind CSS</span></div>
+        </div>
+      </article>
+
+      <article class="tl-item reveal">
+        <div class="tl-dot"><span></span></div>
+        <div class="tl-card">
+          <div class="tl-top">
+            <div>
+              <h3>Full-Stack Web Development Intern</h3>
+              <p class="org">Unified Mentor Pvt Ltd <span class="sep">·</span> <span class="muted">Remote</span></p>
+            </div>
+            <div class="tl-meta"><time>Mar 2025 — May 2025</time></div>
+          </div>
+          <ul class="bullets">
+            <li>Delivered full-stack projects involving real-time application features.</li>
+            <li>Built and deployed applications with React, Node.js and MongoDB.</li>
+            <li>Implemented REST APIs and integrated third-party services.</li>
+          </ul>
+          <div class="chips"><span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>REST APIs</span></div>
+        </div>
+      </article>
     </div>
-    <img src="images/budget.png" alt="Budget management dashboard" loading="lazy" />
-  </article>
+  </div>
+</section>
 
-  <article class="project">
-    <div class="project-text">
-      <h3>AI SaaS platform</h3>
-      <p class="project-sub">Multi-tool dashboard</p>
-      <p>
-        A single dashboard for several AI tools — code generation and conversation — with Clerk
-        handling auth and MongoDB through Prisma holding history. Built to learn how the pieces of
-        a real subscription product fit together.
-      </p>
-      <p class="stack">Next.js 15 · TypeScript · Clerk · MongoDB · Prisma · Google AI · Tailwind CSS</p>
-      <p class="project-links">
-        <a href="https://github.com/shreenivas-nayakawadi/saas-ai" target="_blank" rel="noopener"><svg class="ic"><use href="#i-github"/></svg> Code</a>
-        <a href="https://saas-ai-eta-teal.vercel.app" target="_blank" rel="noopener"><svg class="ic"><use href="#i-link"/></svg> Live</a>
-      </p>
+<section id="work" class="section">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Selected work</span>
+      <h2>Things I've built</h2>
+      <p class="sec-note">Personal projects — my Arnifi work lives in private company repositories.</p>
     </div>
-    <img src="images/ai-saas.png" alt="AI SaaS platform dashboard" loading="lazy" />
-  </article>
 
-  <h3 class="subhead">Also built</h3>
-  <ul class="more-list">
-    <li>
-      <div>
-        <strong>Authentication system</strong>
-        <p>The full security flow rather than just a login form — credentials and OAuth, email verification, password reset, two-factor authentication and middleware-guarded routes.</p>
-        <p class="stack">Next.js · NextAuth.js · Prisma · Radix UI</p>
-      </div>
-      <p class="project-links">
-        <a href="https://github.com/shreenivas-nayakawadi/next-auth" target="_blank" rel="noopener"><svg class="ic"><use href="#i-github"/></svg> Code</a>
-        <a href="https://next-auth-zeta-lake.vercel.app/" target="_blank" rel="noopener"><svg class="ic"><use href="#i-link"/></svg> Live</a>
-      </p>
-    </li>
-    <li>
-      <div>
-        <strong>GitHub test case generator</strong>
-        <p>Point it at any public repository, pick a source file, and it writes unit tests with Gemini — detecting the language and choosing a sensible framework across 12+ languages.</p>
-        <p class="stack">React · Google Gemini API · GitHub REST API</p>
-      </div>
-      <p class="project-links">
-        <a href="https://github.com/shreenivas-nayakawadi/GitHub-Test-Generator" target="_blank" rel="noopener"><svg class="ic"><use href="#i-github"/></svg> Code</a>
-        <a href="https://git-hub-test-generator.vercel.app" target="_blank" rel="noopener"><svg class="ic"><use href="#i-link"/></svg> Live</a>
-      </p>
-    </li>
-    <li>
-      <div>
-        <strong>Cruise ship management</strong>
-        <p>Booking and operations system for onboard services, with role-based access for passengers, staff and managers.</p>
-        <p class="stack">JavaScript · Firebase</p>
-      </div>
-      <p class="project-links">
-        <a href="https://github.com/shreenivas-nayakawadi/cruise-ship-management" target="_blank" rel="noopener"><svg class="ic"><use href="#i-github"/></svg> Code</a>
-        <a href="https://cruise-ship-management-ca45e.web.app" target="_blank" rel="noopener"><svg class="ic"><use href="#i-link"/></svg> Live</a>
-      </p>
-    </li>
-    <li>
-      <div>
-        <strong>Super Mall</strong>
-        <p>Multi-shop marketplace where vendors manage their own listings and offers, with floor and category filtering for shoppers.</p>
-        <p class="stack">JavaScript · Firebase</p>
-      </div>
-      <p class="project-links">
-        <a href="https://github.com/shreenivas-nayakawadi/super-mall" target="_blank" rel="noopener"><svg class="ic"><use href="#i-github"/></svg> Code</a>
-        <a href="https://super-mall-78902.web.app/" target="_blank" rel="noopener"><svg class="ic"><use href="#i-link"/></svg> Live</a>
-      </p>
-    </li>
-    <li>
-      <div>
-        <strong>Academic calendar generator</strong>
+    <div class="feature-grid">
+      <article class="proj-card reveal">
+        <div class="proj-media">
+          <img src="images/new-ecommerce-store.png" alt="E-commerce storefront" loading="lazy" />
+          <span class="proj-tag">Featured</span>
+        </div>
+        <div class="proj-body">
+          <h3>E-commerce Platform</h3>
+          <p class="proj-sub">Storefront + admin dashboard</p>
+          <p>Two Next.js applications over one shared Prisma data model. Admin covers products, categories, variants, billboards and orders with Stripe payments and Cloudinary media. The hard part was keeping two independently deployed apps honest against a single schema.</p>
+          <div class="chips"><span>Next.js 15</span><span>React 19</span><span>TypeScript</span><span>Prisma</span><span>Stripe</span><span>Clerk</span><span>Zustand</span></div>
+          <div class="proj-links">
+            <a href="https://ecommerce-new-store.vercel.app/" target="_blank" rel="noopener"><svg class="ic"><use href="#i-link"/></svg>Live store</a>
+            <a href="https://ecommerce-admin-ten-alpha.vercel.app/" target="_blank" rel="noopener"><svg class="ic"><use href="#i-link"/></svg>Live admin</a>
+            <a href="https://github.com/shreenivas-nayakawadi/Ecommerce-new-store" target="_blank" rel="noopener"><svg class="ic"><use href="#i-github"/></svg>Store code</a>
+            <a href="https://github.com/shreenivas-nayakawadi/Ecommerce-Admin" target="_blank" rel="noopener"><svg class="ic"><use href="#i-github"/></svg>Admin code</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="proj-card reveal">
+        <div class="proj-media">
+          <img src="images/budget.png" alt="Budget management dashboard" loading="lazy" />
+        </div>
+        <div class="proj-body">
+          <h3>Budget Management System</h3>
+          <p class="proj-sub">Receipt scanning &amp; spending insights</p>
+          <p>Upload a receipt photo and Gemini extracts the amount, line items and category — expenses get logged without typing. On top sits authentication, category budgets and a dashboard of where the money actually went.</p>
+          <div class="chips"><span>React</span><span>Node.js</span><span>MongoDB</span><span>Google Gemini</span></div>
+          <div class="proj-links">
+            <a href="https://budget-management-awin.vercel.app" target="_blank" rel="noopener"><svg class="ic"><use href="#i-link"/></svg>Live</a>
+            <a href="https://github.com/shreenivas-nayakawadi/budget_management" target="_blank" rel="noopener"><svg class="ic"><use href="#i-github"/></svg>Code</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="proj-card reveal">
+        <div class="proj-media">
+          <img src="images/ai-saas.png" alt="AI SaaS platform" loading="lazy" />
+        </div>
+        <div class="proj-body">
+          <h3>AI SaaS Platform</h3>
+          <p class="proj-sub">Multi-tool dashboard</p>
+          <p>One dashboard, several AI tools — code generation and conversation — with Clerk handling auth and MongoDB through Prisma holding history. Built to learn how the pieces of a real subscription product fit together.</p>
+          <div class="chips"><span>Next.js 15</span><span>TypeScript</span><span>Clerk</span><span>MongoDB</span><span>Prisma</span><span>Google AI</span></div>
+          <div class="proj-links">
+            <a href="https://saas-ai-eta-teal.vercel.app" target="_blank" rel="noopener"><svg class="ic"><use href="#i-link"/></svg>Live</a>
+            <a href="https://github.com/shreenivas-nayakawadi/saas-ai" target="_blank" rel="noopener"><svg class="ic"><use href="#i-github"/></svg>Code</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="proj-card reveal">
+        <div class="proj-media">
+          <img src="images/next-auth.png" alt="Authentication system" loading="lazy" />
+        </div>
+        <div class="proj-body">
+          <h3>Authentication System</h3>
+          <p class="proj-sub">The full security flow</p>
+          <p>Not just a login form — credentials and OAuth, email verification, password reset, two-factor authentication and middleware-guarded routes. Built to be lifted straight into other projects.</p>
+          <div class="chips"><span>Next.js</span><span>NextAuth.js</span><span>Prisma</span><span>Radix UI</span><span>2FA</span></div>
+          <div class="proj-links">
+            <a href="https://next-auth-zeta-lake.vercel.app/" target="_blank" rel="noopener"><svg class="ic"><use href="#i-link"/></svg>Live</a>
+            <a href="https://github.com/shreenivas-nayakawadi/next-auth" target="_blank" rel="noopener"><svg class="ic"><use href="#i-github"/></svg>Code</a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <h3 class="subhead reveal">Also built</h3>
+    <div class="mini-grid">
+      <a class="mini-proj reveal" href="https://github.com/shreenivas-nayakawadi/GitHub-Test-Generator" target="_blank" rel="noopener">
+        <h4>GitHub Test Generator <svg class="ic"><use href="#i-arrow"/></svg></h4>
+        <p>Points at any public repo and writes unit tests with Gemini — detects language and picks a framework across 12+ languages.</p>
+        <div class="chips sm"><span>React</span><span>Gemini API</span><span>GitHub API</span></div>
+      </a>
+      <a class="mini-proj reveal" href="https://github.com/shreenivas-nayakawadi/cruise-ship-management" target="_blank" rel="noopener">
+        <h4>Cruise Ship Management <svg class="ic"><use href="#i-arrow"/></svg></h4>
+        <p>Booking and operations system for onboard services with role-based access for passengers, staff and managers.</p>
+        <div class="chips sm"><span>JavaScript</span><span>Firebase</span></div>
+      </a>
+      <a class="mini-proj reveal" href="https://github.com/shreenivas-nayakawadi/super-mall" target="_blank" rel="noopener">
+        <h4>Super Mall <svg class="ic"><use href="#i-arrow"/></svg></h4>
+        <p>Multi-shop marketplace where vendors manage their own listings and offers, with floor and category filtering.</p>
+        <div class="chips sm"><span>JavaScript</span><span>Firebase</span></div>
+      </a>
+      <a class="mini-proj reveal" href="https://github.com/shreenivas-nayakawadi/Calender_of_events_generator" target="_blank" rel="noopener">
+        <h4>Academic Calendar Generator <svg class="ic"><use href="#i-arrow"/></svg></h4>
         <p>Generates a semester event calendar from a schedule definition, exportable for students and staff.</p>
-        <p class="stack">HTML · CSS · JavaScript</p>
+        <div class="chips sm"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+      </a>
+    </div>
+
+    <p class="all-repos reveal">
+      <a href="https://github.com/shreenivas-nayakawadi?tab=repositories" target="_blank" rel="noopener">Browse all repositories on GitHub <svg class="ic"><use href="#i-arrow"/></svg></a>
+    </p>
+  </div>
+</section>
+
+<section id="skills" class="section alt">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Skills</span>
+      <h2>What I work with</h2>
+    </div>
+
+    <div class="skill-grid">
+      <div class="skill-card reveal">
+        <svg class="ic ic-lg"><use href="#i-code"/></svg>
+        <h3>Languages</h3>
+        <div class="chips"><span>TypeScript</span><span>JavaScript</span><span>Java</span><span>Python</span><span>C</span></div>
       </div>
-      <p class="project-links">
-        <a href="https://github.com/shreenivas-nayakawadi/Calender_of_events_generator" target="_blank" rel="noopener"><svg class="ic"><use href="#i-github"/></svg> Code</a>
-      </p>
-    </li>
-  </ul>
-
-  <p class="section-note"><a href="https://github.com/shreenivas-nayakawadi?tab=repositories" target="_blank" rel="noopener">All repositories on GitHub →</a></p>
+      <div class="skill-card reveal">
+        <svg class="ic ic-lg"><use href="#i-layers"/></svg>
+        <h3>Frontend</h3>
+        <div class="chips"><span>React</span><span>Next.js</span><span>Redux Toolkit</span><span>Zustand</span><span>Tailwind CSS</span><span>MUI</span></div>
+      </div>
+      <div class="skill-card reveal">
+        <svg class="ic ic-lg"><use href="#i-server"/></svg>
+        <h3>Backend</h3>
+        <div class="chips"><span>Node.js</span><span>Express</span><span>Strapi</span><span>REST APIs</span><span>Spring Boot</span><span>FastAPI</span></div>
+      </div>
+      <div class="skill-card reveal">
+        <svg class="ic ic-lg"><use href="#i-db"/></svg>
+        <h3>Databases</h3>
+        <div class="chips"><span>PostgreSQL</span><span>MongoDB</span><span>Prisma</span><span>Firebase</span></div>
+      </div>
+      <div class="skill-card reveal">
+        <svg class="ic ic-lg"><use href="#i-cloud"/></svg>
+        <h3>Cloud &amp; Tooling</h3>
+        <div class="chips"><span>AWS S3</span><span>AWS SES</span><span>Docker</span><span>Vercel</span><span>Git</span><span>Postman</span></div>
+      </div>
+      <div class="skill-card reveal">
+        <svg class="ic ic-lg"><use href="#i-cap"/></svg>
+        <h3>Education</h3>
+        <ul class="edu">
+          <li><strong>B.E. Information Science</strong><span>Dayananda Sagar College of Engineering · 2022–2026 · CGPA 8.98</span></li>
+          <li><strong>Pre-University (PCMCs)</strong><span>St. Joseph's PU College, Vijayapura · 2019–2021 · 99.66%</span></li>
+          <li><strong>Class 10</strong><span>St. Joseph's English Medium High School · 2019 · 93.12%</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section id="skills" class="wrap">
-  <h2>Skills</h2>
-  <dl class="skills">
-    <div><dt>Languages</dt><dd>TypeScript, JavaScript, Java, Python, C</dd></div>
-    <div><dt>Frontend</dt><dd>React, Next.js, Redux Toolkit, Zustand, Tailwind CSS, MUI</dd></div>
-    <div><dt>Backend</dt><dd>Node.js, Express, Strapi, REST APIs</dd></div>
-    <div><dt>Databases</dt><dd>PostgreSQL, MongoDB, Prisma, Firebase</dd></div>
-    <div><dt>Cloud &amp; tooling</dt><dd>AWS S3 and SES, Docker, Vercel, Git, Postman</dd></div>
-    <div><dt>Also worked with</dt><dd>Spring Boot, FastAPI</dd></div>
-  </dl>
-
-  <h3 class="subhead">Education</h3>
-  <ul class="education">
-    <li><strong>B.E. Information Science and Engineering</strong> — Dayananda Sagar College of Engineering, 2022–2026 <span class="muted">· CGPA 9.02</span></li>
-    <li><strong>Pre-University, Science (PCMCs)</strong> — St. Joseph's PU College, Vijayapura, 2019–2021 <span class="muted">· 99.66%</span></li>
-    <li><strong>Class 10</strong> — St. Joseph's English Medium High School, Vijayapura, 2019 <span class="muted">· 93.12%</span></li>
-  </ul>
-</section>
-
-<section id="contact" class="wrap">
-  <h2>Get in touch</h2>
-  <p class="lede">
-    Open to full-stack roles. The fastest way to reach me is email — I reply to everything.
-  </p>
-  <div class="contact-grid">
-    <a class="contact-card" href="mailto:shreenivasnayakawadi5@gmail.com">
-      <svg class="ic"><use href="#i-mail"/></svg>
-      <span><span class="label">Email</span>shreenivasnayakawadi5@gmail.com</span>
-    </a>
-    <a class="contact-card" href="tel:+916363060232">
-      <svg class="ic"><use href="#i-link"/></svg>
-      <span><span class="label">Phone</span>+91 63630 60232</span>
-    </a>
-    <a class="contact-card" href="https://linkedin.com/in/shreenivas-nayakawadi-214184369" target="_blank" rel="noopener">
-      <svg class="ic"><use href="#i-linkedin"/></svg>
-      <span><span class="label">LinkedIn</span>shreenivas-nayakawadi</span>
-    </a>
-    <a class="contact-card" href="https://github.com/shreenivas-nayakawadi" target="_blank" rel="noopener">
-      <svg class="ic"><use href="#i-github"/></svg>
-      <span><span class="label">GitHub</span>shreenivas-nayakawadi</span>
-    </a>
+<section id="contact" class="section">
+  <div class="wrap">
+    <div class="cta reveal">
+      <span class="eyebrow">Contact</span>
+      <h2>Let's build something</h2>
+      <p>Open to full-stack roles. Email is fastest — I reply to everything.</p>
+      <a class="btn btn-primary btn-lg" href="mailto:shreenivasnayakawadi5@gmail.com">
+        <svg class="ic"><use href="#i-mail"/></svg>shreenivasnayakawadi5@gmail.com
+      </a>
+      <div class="contact-row">
+        <a href="tel:+916363060232"><svg class="ic"><use href="#i-phone"/></svg>+91 63630 60232</a>
+        <a href="https://linkedin.com/in/shreenivas-nayakawadi-214184369" target="_blank" rel="noopener"><svg class="ic"><use href="#i-linkedin"/></svg>LinkedIn</a>
+        <a href="https://github.com/shreenivas-nayakawadi" target="_blank" rel="noopener"><svg class="ic"><use href="#i-github"/></svg>GitHub</a>
+        <a href="ShreenivasNayakawadi_1DS22IS143-1.pdf" download><svg class="ic"><use href="#i-download"/></svg>Résumé</a>
+      </div>
+    </div>
   </div>
 </section>
 
 </main>
 
-<footer class="site-footer">
+<footer class="footer">
   <div class="wrap footer-inner">
     <span>© <span id="year"></span> Shreenivas Nayakawadi</span>
     <span>Bengaluru, India</span>
